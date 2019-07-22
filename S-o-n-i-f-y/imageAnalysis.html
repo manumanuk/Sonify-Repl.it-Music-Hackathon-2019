@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sonify - Convert Image</title>
+    <h1 style="text-align: center;"><span style="font-family: Georgia, serif; font-size: 150px;">Sonify Convert</span></h1><br>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <style>
+    body {
+      //background-color: black;
+      text-align: center;
+      color: white;
+    }
+    .triangle-right {
+      position: relative;
+      left: 48%;
+      width: 0;
+      height: 0;
+      border-top: 34px solid transparent;
+      border-left: 68px solid #42f5e0;
+      border-bottom: 34px solid transparent;
+    }
+    .triangle-down {
+      position: relative;
+      width: 0;
+      height: 0;
+      border-right: 5px solid transparent;
+      border-top: 10px solid #FE0101;
+      border-left: 5px solid transparent;
+    }
+    .triangle-right-cursor {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-left: 10px solid #FE0101;
+      border-bottom: 5px solid transparent;
+    }
+  </style>
+  <body background="images/night-sky-stars.jpg">
+    <!--<div class="triangle-right"></div>-->
+    <!--<div style="position: absolute; left: 50%; margin-left: -115px; background-color: black; padding: 10px; width: 200px; border: 3px white;"><h2 id="playNow">Analyze and Play!</h2></div><br><br><br><br>-->
+    <button type="button" onclick="collectPixels();">Analyze and Play Image!</button><br>  
+    <div id="div1"><div id="cursor-left" class="triangle-down"></div></div>
+    <div id="div2"><div id="cursor-top" class="triangle-right-cursor" float="left"></div></div>
+    <div style="margin 0 auto"><canvas id="canvas"></canvas></div>
+    <script src="imageAnalyzer.js"></script>
+  </body>
+</html>

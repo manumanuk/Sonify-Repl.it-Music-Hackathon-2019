@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sonify. Turn Images Into Sound.</title>
+    <h2 style="text-align: center;"><span style="font-family: Georgia, serif; font-size: 150px;">S o n i f y .</span></h2><br>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <style>
+    body {
+      //background-color: black;
+      text-align: center;
+      color: white;
+    }
+  </style>
+  <body background = "images/night-sky-stars.jpg">
+    <iframe src="https://www.youtube.com/embed/s9Z8Z3MZXpo" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    <p style="text-align: center;"><span style="font-family: 'Raleway', sans-serif; font-size: 24px;">Inspired by the 500th sunrise seen by NASA&#39;s Martian rover Opportunity, researchers Dr. Domenico Vicinanza and Dr. Genevieve Williams worked to generate a script which would convert the image into sound. The result was a two minute masterpiece that combined landscape data and information about the brightness of pixels as read from left to right along the image. Who knew the visual beauty of such a breathtaking image was pleasing to more than one of the senses? Therefore, in tribute to Oppy and the beauty of the Martian sunrise, <i>S o n i f y .</i> hopes to sonificate your favourite online images into the masterpieces they hide beneath. Based on the intensity of the RGB values of each pixel, Sonify scans your images and plays a frequency for each colour corresponding to each one's intensity.</span></p>
+    <hr />
+    <div class="row">
+      <div class="column">
+        <!--<h3>Enter an image URL:</h3>
+          <input type="text" size="80"></input><br>-->
+        <h4 style="font-family: 'Spectral', serif;">Choose a direction for your image analysis and enter the URL to get started!</h4>
+        <button type="button" onclick="getURL('left');" name="left to right" id="leftToRight">Left to Right</button>
+        <button type="button" name="top to bottom" id="topToBottom" onclick="getURL('top');">Top to Bottom</button>
+      </div>
+      <div class="column">
+        <h2 style="font-family: 'Spectral', serif;">Try Out An Example</h2>
+        <div style="height:150px; width:95%; overflow:auto; background-color: black; color: white; scrollbar-base-color: gold; font-family: Georgia; padding:10px;">
+          <a href="imageAnalysis.html"><img src="images/nightsky.jpeg" height="150px" width="225px" onmousedown="setAnalysis('images/nightsky.jpeg', 'left', true)"></img></a>
+          <a href="imageAnalysis.html"><img src="images/sunrise.jpg" height="150px" width="200px" onmousedown="setAnalysis('images/sunrise.jpg', 'left', true)"></img></a>
+          <a href="imageAnalysis.html"><img src="images/sunset.jpeg" height="150px" width="200px" onmousedown="setAnalysis('images/sunset.jpeg', 'top', true)"></img></a>
+          <a href="imageAnalysis.html"><img src="images/redgradientrtol.gif" height="150px" width="200px" onmousedown="setAnalysis('images/redgradientrtol.gif', 'left', true)"></img></a>
+          <a href="imageAnalysis.html"><img src="images/redgradient.jpg" height="150px" width="200px" onmousedown="setAnalysis('images/redgradient.jpg', 'top', true)"></img></a>
+          <a href="imageAnalysis.html"><img src="images/colorblast.jpg" height="150px" width="200px" onmousedown="setAnalysis('images/colorblast.jpg', 'left', true)"></img></a>
+        </div>
+        
+      </div>
+    </div>
+    <script>var picLocation = "images/sunrise.jpg"</script>
+    <script src="script.js"></script>
+  </body>
+</html>
