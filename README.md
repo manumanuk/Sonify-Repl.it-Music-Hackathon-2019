@@ -36,15 +36,15 @@ To begin, try running the example images given on the site. The two red gradient
 
 To play a clip consisting of your own image, simply choose which direction you want the pixels to play in - be it top to bottom or left to right (i.e. read and play row-by-row or column-by-column respectively). A dialogue will pop up.
 
-![](readme_images/Enter_image_url)
+![](readme_images/Enter_image_url.png)
 
 Enter the URL of an image you found online and press "enter" or the OK button on the dialogue.
 
-![](readme_images/Get_image_url)
+![](readme_images/Get_image_url.png)
 
 **Be patient while your image loads.** If it does not load after approximately 10s, pick a different image (or, if you really really want to try that particular image, fork this repl and upload the gif or jpeg as a replacement to the example ones given). Once your image has loaded, press the Analyze button to begin analyzing the image and playing the sounds created by the pixels. A red triangle will appear showing the location of the row/column being played at the current moment.
 
-![](readme_images/Sonify_convert)
+![](readme_images/Sonify_convert.png)
 
 Sit back and enjoy.
 
